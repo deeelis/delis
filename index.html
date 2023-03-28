@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="портфолио Дарьи Зайцевой">
+  <meta name="keywords" content="портфолио">
+  <meta name="author" content="Дарья Зайцева">
+  <link rel="icon" href="favicon.ico"> 
+  <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Портфолио</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <div class="title"><h1 class="font_l">Зайцева Дарья</h1></div>
+    <nav class="header-menu">
+      <a href="#main" class="header-menu__link font_m">Общая информация</a>
+      <a href="#skills" class="header-menu__link font_m">Навыки</a>
+      <a href="#interests" class="header-menu__link font_m">Интересы</a>
+      <a href="#contacts" class="header-menu__link font_m">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <section class="flex-row" id="main">
+      <div class="title flex-row"><h2 class="font_l">Общая информация</h2></div>
+      <div class="main-information flex-row">
+        <div class="main-information__gallery flex-row">
+          <picture>
+            <source srcset="./images/main-photo-1.webp" type="image/webp">
+            <source srcset="./images/main-photo-1.png" type="image/png">
+            <img src="./images/main-photo-1.jpg" alt="Фото Дарьи" class="media_l">
+          </picture>
+          <video src="./videos/main_video.mp4" class="media_l" autoplay muted loop></video>
+          <picture>
+            <source srcset="./images/main-photo-2.webp" type="image/webp">
+            <source srcset="./images/main-photo-2.png" type="image/png">
+            <img src="./images/main-photo-2.jpg" alt="Фото Дарьи в полный рост" class="media_l">
+          </picture>
+        </div>
+        <div class="main-information__description">
+          <h2 class="font_m">Привет, я Даша!</h2>
+          <h2 class="font_m">Студентка ВШПИ, МФТИ.</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="margin_active flex-row" id="skills">
+      <div class="title flex-row"><h2 class="font_l">Навыки</h2></div>
+      <div class="flex-column">
+        <h2 class="list-header font_m">"Soft skills"</h2>
+        <ul class="list font_m">
+          <li>Креативность</li>
+          <li>Стрессоустойчивость</li>
+          <li>Самоорганизация</li>
+          <li>Критическое мышление</li>
+          <li>Коммуникативные навыки</li>
+        </ul>
+      </div> 
+      <div class="flex-column">
+        <h2 class="list-header font_m">"Hard skills"</h2>
+        <ul class="list font_m">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Java</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div> 
+    </section>
+
+    <section class="margin_active flex-row" id="interests">
+      <div class="title flex-row"><h2 class="font_l">Интересы</h2></div>
+      <div class="flex-column">
+        <h2 class="list-header font_m">Некоторые мои увлечения:</h2>
+        <ul class="list font_m">
+          <li>Игра на гитаре</li>
+          <li>Танцы</li>
+          <li>Художественная литература</li>
+          <li>Спортивная мафия</li>
+        </ul>
+      </div>
+      <div class="interests__gallery flex-row">
+        <video src="./videos/dance.mp4" class="media_m" autoplay muted loop></video> 
+        <picture>
+          <source srcset="./images/mafia.webp" type="image/webp">
+          <source srcset="./images/mafia.png" type="image/png">
+          <img src="./images/mafia.jpg" alt="Мафия" class="media_m"> 
+        </picture>
+        <video src="./videos/guitar.mp4" class="media_m" autoplay muted loop></video>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer flex-column" id="contacts">
+    <div class="title flex-row"><h2 class="font_l">Контакты</h2></div>
+    <div class="flex-column">
+      <div class="flex-row"><h2 class="font_m">+79012345678</h2></div>
+      <ul class="footer_icons list">
+        <li class="footer_icon">
+          <a href="https://t.me/dd_lis" target="_blank">
+            <picture>
+              <source srcset="./icons/telegram.webp" type="image/webp">
+              <source srcset="./icons/telegram.png" type="image/png">
+              <img src="./icons/telegram.jpg" alt="telegram" class="media_s">
+            </picture>
+          </a>
+        </li>
+        <li class="footer_icon">
+          <a href="https://vk.com/deeelis" target="_blank">
+            <picture>
+              <source srcset="./icons/vk.webp" type="image/webp">
+              <source srcset="./icons/vk.png" type="image/png">
+              <img src="./icons/vk.jpg" alt="vk" class="media_s"> 
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
